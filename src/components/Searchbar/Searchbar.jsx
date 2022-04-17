@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Formik } from 'formik';
 import { BiSearchAlt2 } from 'react-icons/bi';
 import {
@@ -31,4 +32,8 @@ export const Searchbar = ({ onSubmit }) => {
       </Formik>
     </SearchbarHeader>
   );
+};
+
+Searchbar.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
 };
